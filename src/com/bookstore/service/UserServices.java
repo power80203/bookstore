@@ -24,9 +24,10 @@ public class UserServices {
 	}
 	
 	
-	public void listUser() {
+	public List<Users> listUser() {
 		List<Users> users = userDAO.listAll();
 		
+		return users;
 	}
 
 }
